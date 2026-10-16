@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Raw Data & model (not commit, too large)
+data/raw/
+data/processed/
+models/*.joblib
+
+# OS / editor
+.DS_Store
+.vscode/
