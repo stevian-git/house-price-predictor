@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "dummy": {
+      "mae": 57012.20547945206,
+      "rmse": 75774.93895698727,
+      "r2": -0.039486745338886964
+    },
+    "linear": {
+      "mae": 24768.518524356172,
+      "rmse": 34798.54202687513,
+      "r2": 0.7807751091566719
+    },
+    "rf": {
+      "mae": 23681.466327733062,
+      "rmse": 33336.8651131884,
+      "r2": 0.7988049547951623
+    },
+    "gradient_boosting": {
+      "mae": 24492.910293791007,
+      "rmse": 33630.0676017537,
+      "r2": 0.7952503131465836
+    }
+  },
+  "tuned_rf": {
+    "best_params": {
+      "model__max_depth": 20,
+      "model__max_features": "sqrt",
+      "model__min_samples_leaf": 1,
+      "model__n_estimators": 400
+    },
+    "cv_mae": 22736.965682068745,
+    "test": {
+      "mae": 22825.875037940994,
+      "rmse": 32673.531044113806,
+      "r2": 0.8067320195909231
+    }
+  },
+  "feature_importance_top10": {
+    "num__GrLivArea": 0.3482891665290524,
+    "num__GarageCars": 0.19732173643412743,
+    "num__Bathrooms": 0.15588317881378674,
+    "cat__Neighborhood_NridgHt": 0.0536460647034761,
+    "num__BedroomAbvGr": 0.05080913256519074,
+    "cat__Neighborhood_OldTown": 0.027710180392246236,
+    "cat__Neighborhood_NoRidge": 0.024534812385889684,
+    "cat__Neighborhood_Edwards": 0.018945156369360883,
+    "cat__Neighborhood_IDOTRR": 0.015536269172324707,
+    "cat__Neighborhood_StoneBr": 0.015191172196460368
+  }
+}

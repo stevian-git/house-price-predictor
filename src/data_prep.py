@@ -1,8 +1,9 @@
 from pathlib import Path
 import pandas as pd
 
-RAW = Path("data/raw/train.csv")
-PROCESSED = Path("data/processed/train_clean.csv")
+ROOT = Path(__file__).resolve().parent.parent
+RAW = ROOT / Path("data/raw/train.csv")
+PROCESSED = ROOT / Path("data/processed/train_clean.csv")
 
 FEATURES = ["Neighborhood", "GrLivArea", "BedroomAbvGr", "Bathrooms", "GarageCars"]
 TARGET = "SalePrice"
